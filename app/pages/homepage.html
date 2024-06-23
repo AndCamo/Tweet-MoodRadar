@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../script/mainScript.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../style/mainStyle.css" rel="stylesheet">
+    <link href="../style/resultStyle.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2f266e86a2.js" crossorigin="anonymous"></script>
+    <title>TweetMood Radar</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <div class="container-xxl" style="height: 100vh;" id="main-container">
+        <div class="row p-2 m-5 header">
+            <div class="col-4 headerImageContainer" >
+                <img class="headerImage"  src="../assets/radar.png">
+            </div>
+            <div class="col-8 headerTitle" style="background-color: white;">
+                TweetMood Radar
+            </div>
+        </div>
+        <div class="main-container m-5">
+            <div class="row p-2 resultTitleRow">
+                <div class="col-12"> Homepage <i class="fa-solid fa-home" style="color: #fe4600;"></i></div>
+            </div>
+            <div class="row p-2 titleRow">
+                <div class="col-12">SCARICA I TWEET <i class="fa-solid fa-folder-plus" style="color: #fe4600;"></i></div>
+            </div>
+            <div class="row folderSection" style="padding-bottom: 0px">
+                <div class="col-6"> <span style="font-weight: 600;">Agomento ricercato</span></div>
+                <div class="col-3"> <span style="font-weight: 600;">Numero di Tweet</span></div>
+                <div class="col-3"> <span style="font-weight: 600;">Tipo di ricerca</span></div>
+            </div>
+            <div class="row folderSection" style="height: 8vh;">
+                <div class="col-6">
+                    <input type="text" class="defaultInput" id="query-input" spellcheck="false" placeholder="Inserisci i parametri di ricerca" size="100">
+                </div>
+                <div class="col-3">
+                    <input type="number" class="defaultInput" id="number-input" spellcheck="false" placeholder="Numero" size="100">
+                </div>
+                <div class="col-3">
+                    <select class="defaultSelect" id="mode-select">
+                        <option value="hashtag">Hashtag</option>
+                        <option value="term">Term</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row folderSection">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <button class="defaultButton" style="width: 100%;" onclick="downloadTweet()"><i class="fa-solid fa-file-arrow-down buttonIcon"></i><span class="buttonText">Scarica</span></button>
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row p-2 titleRow">
+                <div class="col-12">ANALISI DEI TWEET <i class="fa-brands fa-twitter" style="color: #fe4600;"></i></div>
+            </div>
+            <div class="row folderSection" style="padding-bottom: 0px">
+                <div class="col-12"> <span style="font-weight: 600;">Seleziona i Tweet da analizzare</span></div>
+            </div>
+            <div class="row folderSection" style="height: 8vh;">
+                <div class="col-12">
+                    <input type="file" id="tweet-file" name="tweet-file" accept="file/csv" onchange="getFileName()"/>
+                </div>
+            </div>
+            <div class="row folderSection">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <button class="defaultButton" style="width: 100%;" onclick="startTweetAnalysis()"><i class="fa-solid fa-circle-play buttonIcon"></i><span class="buttonText">Avvia Analisi</span></button>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

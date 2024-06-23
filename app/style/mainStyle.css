@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700&display=swap');
+
+* {
+   font-family: Montserrat;
+}
+body {
+   font-family: Montserrat;
+   background-color: #1DA1F2;
+}
+
+.main-container{
+   background-color: whitesmoke;
+   border-radius: 20px;
+   margin-top: 5vh;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.folderSection{
+   padding: 10px 30px;
+   font-size: 1.1em;
+   font-weight: 500;
+}
+
+.titleRow{
+   background-color: #00509D;
+   border-radius: 20vh;
+   color: white;
+   font-weight: bold;
+   font-size: 1.3em;
+}
+
+.header{
+   background-color: white !important;
+   outline: #00509D 7px solid;
+   border-radius: 40px;
+   overflow: auto;
+   padding: 25px;
+   height: 15%;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.headerButtonContainer{
+   height: 100%;
+}
+
+.headerButton{
+   background-color: white;
+   height: 100%;
+   display: flex; /* Imposta il display a flex per utilizzare il modello di box flessibile */
+   justify-content: left; /* Centra orizzontalmente il contenuto */
+   align-items: center; /* Centra verticalmente il contenuto */
+   font-weight: 600;
+}
+
+.headerButton img{
+   padding: 4px;
+   background-color: white;
+   border-radius: 5px;
+   max-width:100%;
+   margin-right: 0;
+}
+
+.headerButton img:hover{
+   outline: #1DA1F2 5px solid;
+   overflow: hidden;
+   transition: all 250ms;
+   transform: translateY(-2%);
+}
+
+.headerImageContainer{
+   height: 100%;
+   background-color: white;
+   display: flex; /* Imposta il display a flex per utilizzare il modello di box flessibile */
+   justify-content: right; /* Centra orizzontalmente il contenuto */
+   align-items: center; /* Centra verticalmente il contenuto */
+}
+
+.headerImage{
+   max-width:9 0%;
+   background-color: white;
+   max-height:90%;
+}
+
+.headerTitle{
+   color: #00509D;
+   display: flex; /* Imposta il display a flex per utilizzare il modello di box flessibile */
+   justify-content: left; /* Centra orizzontalmente il contenuto */
+   align-items: center; /* Centra verticalmente il contenuto */
+   font-size: 3em;
+   font-weight: 800;
+}
+
+
+
+.defaultInput{
+   border: #657ed4 5px solid;
+   color: black;
+   padding: 0 15px;
+   border-radius: 10px;
+   box-sizing: border-box;
+   height: 100%;
+   width: 100%;
+  }
+
+.defaultSelect{
+   border: #657ed4 5px solid;
+   color: black;
+   padding: 0 15px;
+   border-radius: 10px;
+   box-sizing: border-box;
+   height: 100%;
+   width: 100%;
+}
+.defaultButton{
+  background-color: white;
+  border: #657ed4 5px solid !important;
+  padding: 0.8em 2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+.buttonIcon {
+   color: #657ed4;
+   transition: all 400ms ease;
+   margin: 0 5px;
+ }
+ 
+ .buttonText {
+   font-weight: 800;
+   color: #657ed4;
+   font-size: larger;
+ }
+
+.defaultButton:hover {
+   background: radial-gradient(circle, #00509d, #0857a3, #105eaa, #1765b0, #1e6cb6);
+   transition: all 250ms;
+ }
+ 
+ .defaultButton:hover .buttonText {
+   color: white;
+ }
+ 
+ .defaultButton:hover .buttonIcon {
+   color: white;
+   font-size: 1.2em;
+   transition: all 250ms;
+ } 
